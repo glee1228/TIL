@@ -59,7 +59,6 @@
    #### ML in the google self-driving Car
 
 
-
 ## 머신러닝 실습 테스트 사이트
 
 ##### 	`kaggle`
@@ -88,3 +87,11 @@
 ## '나' 의 블로그 제작
 
 1. ##### github blog page 
+
+
+
+## NLP/NLU 강의
+
+1. ##### edx - Microsoft
+
+2. ##### udacity
