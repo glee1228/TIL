@@ -1,6 +1,7 @@
 ## 텍스트 분석 - 자연어 처리
-##### google nlu
-##### google cloud natural language
+##### ```google nlu```
+
+##### ```google cloud natural language```
 -단어 종류, 품사 분석, 감성 분석, 카테고리 분석
 
 
@@ -80,18 +81,30 @@
 
 ## 마크다운 사용
 
-1. ##### Typora.io
+1. ##### ```Typora.io```
 
  
 
 ## '나' 의 블로그 제작
 
-1. ##### github blog page 
+1. ##### ```github blog page ```
 
 
 
 ## NLP/NLU 강의
 
-1. ##### edx - Microsoft
+1. ##### ```edx - Microsoft```
 
-2. ##### udacity
+2. ##### ```udacity```
+
+
+
+## 한글 NLP API
+
+1. ##### ```은전한닢```
+
+
+
+## 영어 음성 형태소 분석 API
+
+1. ##### ```Google cloud API```
