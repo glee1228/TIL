@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b552b48-6d58-4882-bf6a-891e4147e942" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numpy1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW/~$oject1.docx" beforeDir="false" />
-    </list>
+    <list default="true" id="7b552b48-6d58-4882-bf6a-891e4147e942" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +12,7 @@
     <session id="1156310123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -24,10 +20,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="3430" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="3430" />
         </counts>
       </usages-collector>
@@ -88,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/people.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="33" selection-start-line="23" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="375">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <marker date="1536567552573" expanded="true" signature="13:18" ph="..." />
                 <marker date="1536567552573" expanded="true" signature="313:314" ph="..." />
@@ -264,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/people.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="33" selection-start-line="23" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="375">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <marker date="1536567552573" expanded="true" signature="13:18" ph="..." />
             <marker date="1536567552573" expanded="true" signature="313:314" ph="..." />
