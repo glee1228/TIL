@@ -63,3 +63,4 @@ col_r1 = a[:, 1]
 col_r2 = a[:, 1:2]
 print(col_r1, col_r1.shape)
 print(col_r2, col_r2.shape)
+print(globals())
