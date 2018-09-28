@@ -1,3 +1,4 @@
+
 import collections
 
 def computeMaxWordLength1(text):
@@ -66,20 +67,24 @@ def manhattanDistance(loc1, loc2):
     # END_YOUR_CODE
 
 def computeLongestPalindrome(text):
-    """
-    A palindrome is a string that is equal to its reverse (e.g., 'ana').
-    Compute the length of the longest palindrome that can be obtained by deleting
-    letters from |text|.
-    For example: the longest palindrome in 'animal' is 'ama'.
-    Your algorithm should run in O(len(text)^2) time.
-    You should first define a recurrence before you start coding.
-    """
-    cost_matrix = [[None] * len(text) for i in range(len(text))]  # 2-dimensional list
-
+    
+    #cost_matrix = [[None] * len(text) for i in range(len(text))]  # 2-dimensional list
+    
     # BEGIN_YOUR_CODE
-
+    # the below code don't exploit dynamic progrmming
+ 
+    def get_cost(i, j):
+        if i == j:
+            return 1
+        elif i > j:
+            return 0
+        elif text[i]==text[j]:
+            return get_cost(i+1,j-1)+2
+        else:
+            return max(get_cost(i,j-1),get_cost(i+1,j))
+ 
+    return get_cost(0, len(text)-1)
     # END_YOUR_CODE
-
 
 def fibo(n):
     if n == 0:
@@ -104,23 +109,12 @@ def fibo_dynamic(n):
     return fibo_r(n)
 
 def mutateSentences(sentence):
-    """
-    High-level idea: generate sentences similar to a given sentence.
-    Given a sentence (sequence of words), return a list of all possible
-    alternative sentences of the same length, where each pair of adjacent words
-    also occurs in the original sentence. (The words within each pair should appear
-    in the same order in the output sentence as they did in the orignal sentence.)
-    Notes:
-    - The order of the sentences you output doesn't matter.
-    - You must not output duplicates.
-    - Your generated sentence can use a word in the original sentence more than
-      once.
-    """
-    # BEGIN_YOUR_CODE
     
-    # END_YOUR_CODE
+    return
+
 def main():
     #print(computeMaxWordLength1("cat dog manipulation"))
-    print(computeMostFrequentWord("cat dog manipulation cat"))
-    print(manhattanDistance((5,5),(1,10)))
+    #print(computeMostFrequentWord("cat dog manipulation cat"))
+    #print(manhattanDistance((5,5),(1,10)))
+    print(computeLongestPalindrome("animal"))
 main()
