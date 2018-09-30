@@ -129,17 +129,17 @@ def mutateSentences(sentence):
 
     for i in range(len(input_words) - 1):
         next_word_set_dict[input_words[i]].add(input_words[i + 1])
-
+    print(next_word_set_dict)
     sentences = []
     stack = []
 
     def mutate_sentence_r(word):
-        stack.append(_X_)  # push something
-        if len(_X_) == len(_X_):
+        stack.append(word)  # push something
+        if len(stack) == len(input_words):
             sentences.append(' '.join(stack))
         else:
             for next_word in next_word_set_dict[word]:
-                mutate_sentence_r(_X_)
+                mutate_sentence_r(next_word)
         stack.pop()
 
     for word in word_set:
@@ -151,5 +151,6 @@ def main():
     #print(computeMaxWordLength1("cat dog manipulation"))
     #print(computeMostFrequentWord("cat dog manipulation cat"))
     #print(manhattanDistance((5,5),(1,10)))
-    print(computeLongestPalindrome("animal"))
+    #print(computeLongestPalindrome("animal"))
+    print(mutateSentences("a b a c"))
 main()
