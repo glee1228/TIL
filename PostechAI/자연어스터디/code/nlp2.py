@@ -1,8 +1,8 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 import re
-import nltk
 
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.stem.snowball import SnowballStemmer
@@ -33,16 +33,40 @@ quoting =3 은 쌍따옴표를 무시하도록 한다.
 # QUOTE_MINIMAL (0), QUOTE_ALL (1),
 # QUOTE_NONNUMERIC (2) or QUOTE_NONE (3).
 
-# 레이블인 sentiment 가 있는 학습 데이터
-train = pd.read_csv('../data/labeledTrainData.tsv',header=0,delimiter='\t',quoting=3)
 
-# 레이블이 없는 테스트 데이터
-test = pd.read_csv('../data/testData.tsv',header=0,delimiter='\t',quoting=3)
 
-num_reviews = train['review'].size
-print(num_reviews)
-clean_review = review_to_words(train['review'][0])
-#clean_train_reviews = []
+from multiprocessing import Pool
+import numpy as np
 
-#for i in range(0, num_reviews):
-#    clean_train_reviews.append(review_to_words(train['review'][i]))
+def _apply_df(args):
+    df, func, kwargs = args
+    return df.apply(func, **kwargs)
+
+def apply_by_multiprocessing(df, func, **kwargs):
+    #키워드 항목 중 workers 파라미터를 꺼냄
+    workers = kwargs.pop('workers')
+    # 위에서 가져온 workers 수로 프로세스 풀을 정의
+    pool = Pool(processes=workers)
+    # 실행할 함수와 데이터프레임을 워커의 수 만큼 나눠 작업
+    result = pool.map(_apply_df, [(d, func, kwargs) for d in np.array_split(df, workers)])
+    pool.close()
+    return pd.concat(list(result))
+
+if __name__ == '__main__':
+    #clean_train_reviews = apply_by_multiprocessing(train['review'][0:5], review_to_words, workers=4)
+    #print(clean_train_reviews[:10])
+    # 레이블인 sentiment 가 있는 학습 데이터
+    train = pd.read_csv('../data/labeledTrainData.tsv', header=0, delimiter='\t', quoting=3)
+    #print(train)
+    # 레이블이 없는 테스트 데이터
+    test = pd.read_csv('../data/testData.tsv', header=0, delimiter='\t', quoting=3)
+
+    num_reviews = train['review'].size
+    #print(num_reviews)
+    clean_review = review_to_words(train['review'][0])
+    #print(clean_review)
+    clean_train_reviews = []
+
+    for i in range(0, 10):
+        train['review_clean'] = train['review'].apply(review_to_words)
+    print(train['review_clean'])
