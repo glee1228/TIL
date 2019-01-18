@@ -96,7 +96,9 @@ Generator는 Discriminator를 속이기 위해 2가지를 해야하는데,
 * WGAN(Wasserstein GAN)
 
 ```
-GAN에서 실제 데이터 분포와 근사하는 분포가 얼마나 다른지 측정하는 거리 개념을 바꿔 안정적인 학습을 가능하게 만들었다
+GAN에서 실제 데이터 분포와 근사하는 분포가 얼마나 다른지 측정하는 거리 개념을 바꿔 안정적인 학습을 가능하게 만들었다.
+1. DCGAN에 비해 모드 붕괴(Mode Collapse)현상이 일어나지 않는다.
+2. Generator는 Critic이 잘 학습된 이후에도 학습이 잘된다.
 ```
 
 * EBGAN(Energy-based GAN)

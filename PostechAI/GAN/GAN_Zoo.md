@@ -6,14 +6,6 @@
 
 ![img](https://cdn-images-1.medium.com/max/1600/0*ncqqFthh4e9baHxI.jpg)
 
-Pretty painting is always better than a Terminator
-
-Every week, new papers on Generative Adversarial Networks (GAN) are coming out and it’s hard to keep track of them all, not to mention the incredibly creative ways in which researchers are naming these GANs! You can read more about GANs in this [Generative Models post](https://blog.openai.com/generative-models/) by OpenAI or this [overview tutorial](http://www.kdnuggets.com/2017/01/generative-adversarial-networks-hot-topic-machine-learning.html) in KDNuggets.
-
-
-
-![img](https://cdn-images-1.medium.com/max/1600/0*NI4oWIcZgSKjIE88.jpg)
-
 Explosive growth — All the named GAN variants cumulatively since 2014. Credit: [Bruno Gavranović](https://github.com/bgavran)
 
 So, here’s the current and frequently updated list, from what started as a fun activity compiling all named GANs in this format: **Name** and **Source Paper**linked to [Arxiv](https://arxiv.org/). Last updated on Feb 23, 2018.
