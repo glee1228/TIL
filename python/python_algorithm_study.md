@@ -2,11 +2,13 @@
 
 * 잊지말아야할 파이썬 알고리즘 유형
 
-#### 1. Delete Starting Even Numbers
+#### 1. Delete Starting Even Numbers (소수시작점 지우기)
 
 ```
 delete_starting_evens(lst)
 ```
+
+소수 : 자신보다 작은 두 개의 자연수를 곱하여 만들 수 없는 1보다 큰 자연수이다.
 
 Instructions
 
