@@ -26,7 +26,7 @@ glee1228@naver.com
 
 https://code.visualstudio.com/
 
-![image-20190824004838346](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824004838346.png)
+![image-20190824004838346](../Image/img_vscode_1.png)
 
 
 
@@ -34,25 +34,25 @@ https://code.visualstudio.com/
 
 1. 왼쪽 블록모양의 메뉴 클릭한 후, 'Korean Language Pack for Visual Studio Code' 설치
 
-![image-20190824004305099](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824004305099.png)
+![image-20190824004305099](../Image/img_vscode_2.png)
 
 2. command + shift + p 입력
 
 3. 'display' 입력 후 ko 선택
 
-![image-20190824004617647](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824004617647.png)
+![image-20190824004617647](../Image/img_vscode_3.png)
 
-![image-20190824004654087](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824004654087.png)
+![image-20190824004654087](../Image/img_vscode_4.png)
 
 4. 다시 시작 버튼을 누르면, VSCode 재시작 후 한글로 UI가 변경됨.
 
-![image-20190824004727478](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824004727478.png)
+![image-20190824004727478](../Image/img_vscode_5.png)
 
 
 
 ### C/C++ 확장팩 설치
 
-![image-20190824005732726](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824005732726.png)
+![image-20190824005732726](../Image/img_vscode_6.png)
 
 
 
@@ -277,7 +277,7 @@ tasks.json
 
 1. gdb 디버깅 패키지를 brew 명령어로 설치해줍니다. 
 
-![image-20190824011534373](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824011534373.png)
+![image-20190824011534373](../Image/img_vscode_7.png)
 
 gcc와 gdb가 아직 잘 모르시는 분들은 다음 링크를 참조하세요.
 
@@ -287,11 +287,11 @@ gcc와 gdb가 아직 잘 모르시는 분들은 다음 링크를 참조하세요
 
 2. VSCode 왼쪽 메뉴중 벌레모양(Debug) 메뉴 선택 -> 톱니바퀴 선택
 
-![image-20190824013240693](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824013240693.png)
+![image-20190824013240693](../Image/img_vscode_8.png)
 
 3. GDB/LLDB 선택
 
-![image-20190824013418631](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824013418631.png)
+![image-20190824013418631](../Image/img_vscode_9.png)
 
 4. launch.json에 아래 내용과 동일하게 수정
 
@@ -321,16 +321,16 @@ launch.json
 
 5. 터미널 cd 명령어로 stack.c 파일이 있는 디렉토리로 이동(제 Mac에서의 경로는 다음과 같이GitHub/TIL/Algorithm/C_basic 이므로 개인 pc에 맞추어 경로를 지정하시면 됩니다)
 
-![image-20190824014059566](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824014059566.png)
+![image-20190824014059566](../Image/img_vscode_10.png)
 
 6. gcc 에 -g 옵션을 주어 gdb에게 제공하는 정보를 바이너리에 삽입합니다.
 
    (-g 옵션은 디버깅 옵션입니다. 만약 -g를 사용하지 않고 gdb로 디버깅하면, 역어셈 - > 어셈블리 코드로만 디버깅이 가능합니다)
 
-![image-20190824014501990](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824014501990.png)
+![image-20190824014501990](../Image/img_vscode_11.png)
 
 7. 아래와 같이 중단점을 찍고, F5를 눌러 코드 디버깅을 하면 됩니다.
 
-![image-20190824014628727](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824014628727.png)
+![image-20190824014628727](../Image/img_vscode_12.png)
 
-![image-20190824014713534](/Users/donghoon/Library/Application Support/typora-user-images/image-20190824014713534.png)
+![image-20190824014713534](../Image/img_vscode_13.png)
