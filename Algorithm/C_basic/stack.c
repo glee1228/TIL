@@ -13,7 +13,7 @@ void PUSH(int [],int);
 /* pop (remove) item from stack*/
 void POP (int []);
  
-void main()
+int main()
 {
     int ITEM=0;
     int choice=0;
@@ -21,7 +21,6 @@ void main()
  
     while(1)
     {
-        /*clrscr();*/
         printf("Enter Choice (1: display, 2: insert (PUSH), 3: remove(POP)), 4: Exit..:");
         scanf("%d",&choice);
  
@@ -44,9 +43,9 @@ void main()
             printf("\nInvalid choice.");
             break;
         }
-        getch();
+        int _getch();
     }// end of while(1)
- 
+
 }
  
 /*  function    : display(),
