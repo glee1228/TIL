@@ -158,7 +158,8 @@ void free_list(Node *node){
 int main(void){
     Node *head = NULL;
     int n, data, i;
-
+    char cal;
+    int r;
     scanf("%d", &n);
 
     for(i=0;i<n;++i){
